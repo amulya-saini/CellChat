@@ -54,6 +54,7 @@ Please check the [Jin et al., Nature Protocols 2024](https://www.nature.com/arti
 
 
 ### Analysis of single-cell transcriptomics data
+(# cellchat <- projectData(cellchat, PPI.human) has been updated to #cellchat <- smoothData(cellchat, adj = PPI.human))
 - [Full tutorial for CellChat analysis of a single dataset with detailed explanation of each function](https://htmlpreview.github.io/?https://github.com/jinworks/CellChat/blob/master/tutorial/CellChat-vignette.html)
 - [Full tutorial for comparison analysis of multiple datasets](https://htmlpreview.github.io/?https://github.com/jinworks/CellChat/blob/master/tutorial/Comparison_analysis_of_multiple_datasets.html)
 - [Comparison analysis of multiple datasets with different cellular compositions](https://htmlpreview.github.io/?https://github.com/jinworks/CellChat/blob/master/tutorial/Comparison_analysis_of_multiple_datasets_with_different_cellular_compositions.html)
