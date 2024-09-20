@@ -27,7 +27,7 @@ netAnalysis_contribution <- function(object, signaling, signaling.name = NULL, s
                                      x.rotation = 0, title = "Contribution of each L-R pair",
                                      font.size = 10, font.size.title = 10) {
   pairLR <- searchPair(signaling = signaling, pairLR.use = object@LR$LRsig, key = "pathway_name", matching.exact = T, pair.only = T)
-  pair.name.use = select(object@DB$interaction[rownames(pairLR),],"interaction_name_2")
+  pair.name.use = unique(select(object@DB$interaction[rownames(pairLR),],"interaction_name_2"))
   if (is.null(signaling.name)) {
     signaling.name <- signaling
   }
